@@ -2,6 +2,8 @@
 
 echo "Atualizando regras do Cloudflare no UFW..."
 
+
+# Percorrer as regras atuais e remover elas ao invés de usar ufw reset em produção
 # Limpra regras antigas 
 ufw --force reset
 
